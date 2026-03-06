@@ -3,165 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GUJRATI TRADER</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    min-height:100vh;
-    background:linear-gradient(180deg,#eef2ff,#f8f9ff);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.card{
-    width:92%;
-    max-width:420px;
-    background:#fff;
-    border-radius:28px;
-    padding:35px 25px 30px;
-    text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,0.12);
-}
-
-/* ================= LOGO GLOW ================= */
-.logo-wrap{
-    width:120px;
-    height:120px;
-    margin:0 auto 18px;
-    border-radius:50%;
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    animation:logoGlow 3s infinite alternate;
-}
-
-@keyframes logoGlow{
-    0%{ box-shadow:0 0 12px rgba(79,70,229,0.4); }
-    100%{ box-shadow:0 0 40px rgba(79,70,229,0.95); }
-}
-
-.logo-wrap img{
-    width:85%;
-}
-
-/* ================= TITLE ================= */
-h1{
-    font-size:26px;
-    font-weight:700;
-    letter-spacing:1px;
-    margin-bottom:8px;
-}
-
-.sub{
-    font-size:14px;
-    color:#777;
-    margin-bottom:22px;
-}
-
-/* ================= FEATURES ================= */
-.features{
-    text-align:left;
-    margin-bottom:30px;
-}
-
-.feature{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:15px;
-    margin-bottom:14px;
-    color:#333;
-}
-
-/* ================= TELEGRAM BUTTON ================= */
-.telegram-btn{
-    width:100%;
-    padding:16px;
-    font-size:16px;
-    font-weight:600;
-    color:#fff;
-    border:none;
-    border-radius:14px;
-    background:linear-gradient(135deg,#2563eb,#4f46e5);
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-
-    animation:heartbeat 1.5s infinite,
-              btnGlow 2.5s infinite alternate;
-}
-
-/* HEART BEAT */
-@keyframes heartbeat{
-    0%{transform:scale(1);}
-    25%{transform:scale(1.05);}
-    50%{transform:scale(1);}
-    75%{transform:scale(1.08);}
-    100%{transform:scale(1);}
-}
-
-/* BUTTON GLOW */
-@keyframes btnGlow{
-    0%{
-        box-shadow:0 0 10px rgba(79,70,229,0.5);
-    }
-    100%{
-        box-shadow:0 0 35px rgba(79,70,229,1);
-    }
-}
-
-/* ================= TELEGRAM ICON ================= */
-.telegram-icon{
-    font-size:22px;
-    animation:bounce 1.2s infinite,
-              iconGlow 2s infinite alternate;
-}
-
-/* ICON BOUNCE */
-@keyframes bounce{
-    0%,100%{transform:translateY(0);}
-    50%{transform:translateY(-6px);}
-}
-
-/* ICON GLOW */
-@keyframes iconGlow{
-    0%{text-shadow:0 0 6px rgba(255,255,255,0.6);}
-    100%{text-shadow:0 0 16px rgba(255,255,255,1);}
-}
-
-/* ================= STARS ================= */
-.stars{
-    margin:22px 0 10px;
-    font-size:22px;
-    color:#facc15;
-}
-
-.rating{
-    font-size:13px;
-    color:#666;
-    margin-bottom:18px;
-}
-
-/* ================= DISCLAIMER ================= */
-.disclaimer{
-    font-size:11.5px;
-    color:#9a9a9a;
-    line-height:1.6;
-}
-</style>
+<title>Gujarati Trader</title>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -172,13 +14,182 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1601410700862699');
+fbq('init', '882402421174669');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1601410700862699&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=882402421174669&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#000;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CARD */
+.card{
+    width:100%;
+    max-width:390px;
+    background:linear-gradient(180deg,#0e1422,#070b14);
+    border-radius:22px;
+    padding:32px 22px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 40px rgba(212,175,55,.22);
+}
+
+/* GOLD ROTATING BORDER */
+.card::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    background:conic-gradient(from 0deg,#d4af37,transparent,#d4af37);
+    animation:rotate 7s linear infinite;
+    z-index:-1;
+}
+
+@keyframes rotate{
+    100%{transform:rotate(360deg);}
+}
+
+/* LOGO */
+.logo-wrap{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    padding:6px;
+    margin:0 auto 18px;
+    background:linear-gradient(135deg,#1e3c72,#d4af37);
+}
+
+.logo-wrap img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    background:#000;
+}
+
+/* BARS */
+.bars{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-bottom:18px;
+}
+
+.bar{
+    width:14px;
+    border-radius:4px;
+    animation:jump 1.2s infinite ease-in-out;
+}
+
+.bar:nth-child(2){animation-delay:.2s}
+.bar:nth-child(3){animation-delay:.4s}
+.bar:nth-child(4){animation-delay:.6s}
+.bar:nth-child(5){animation-delay:.8s}
+
+.blue{background:#2f6df6;height:42px;}
+.gold{background:#d4af37;height:30px;}
+
+@keyframes jump{
+    50%{transform:scaleY(1.4);}
+}
+
+/* TEXT */
+h1{
+    color:#fff;
+    font-size:26px;
+    letter-spacing:1px;
+}
+
+.sub{
+    color:#2f6df6;
+    margin:8px 0 20px;
+    font-size:15px;
+}
+
+/* LIVE COUNTER */
+.counter{
+    color:#d4af37;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* TELEGRAM BUTTON */
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    background:linear-gradient(135deg,#2f6df6,#1e3c72);
+    color:#fff;
+    padding:15px 32px;
+    border-radius:30px;
+    font-weight:700;
+    text-decoration:none;
+    animation:heartbeat 1.5s infinite;
+    box-shadow:0 0 28px rgba(47,109,246,.55);
+}
+
+.btn span{
+    font-size:20px;
+    animation:pulsePlus 1s infinite;
+}
+
+@keyframes heartbeat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.08);}
+}
+
+@keyframes pulsePlus{
+    50%{transform:scale(1.4);}
+}
+
+/* POINTS */
+.list{
+    margin-top:26px;
+    text-align:left;
+}
+
+.list p{
+    color:#cfd8dc;
+    font-size:14px;
+    margin-bottom:14px;
+    padding-left:18px;
+    position:relative;
+}
+
+.list p::before{
+    content:"•";
+    position:absolute;
+    left:0;
+    top:-4px;
+    color:#2f6df6;
+    font-size:22px;
+}
+
+/* DISCLAIMER */
+.disclaimer{
+    margin-top:22px;
+    font-size:11px;
+    color:#7a8a9a;
+    line-height:1.5;
+}
+</style>
 </head>
 
 <body>
@@ -187,34 +198,55 @@ src="https://www.facebook.com/tr?id=1601410700862699&ev=PageView&noscript=1"
 
     <!-- LOGO -->
     <div class="logo-wrap">
-        <img src="logo.png" alt="GUJRATI TRADER">
+        <img src="logo.png" alt="Gujarati Trader">
+    </div>
+
+    <!-- BARS -->
+    <div class="bars">
+        <div class="bar blue"></div>
+        <div class="bar gold"></div>
+        <div class="bar blue"></div>
+        <div class="bar gold"></div>
+        <div class="bar blue"></div>
     </div>
 
     <h1>GUJRATI TRADER</h1>
-    <div class="sub">20,000+ learners • Trusted community</div>
+    <div class="sub">BankNifty • Nifty • Stock Options</div>
 
-    <div class="features">
-        <div class="feature">📊 Market Education & Chart Reading</div>
-        <div class="feature">📈 Nifty • BankNifty • Stock Analysis</div>
-        <div class="feature">🛡️ Risk Management & Discipline</div>
-        <div class="feature">🎯 Learn with clarity, not false promises</div>
+    <!-- LIVE COUNTER -->
+    <div class="counter">
+        👥 Live Members: <span id="count">33856</span>+
     </div>
 
-    <!-- TELEGRAM BUTTON -->
-    <button class="telegram-btn" onclick="window.location.href='https://t.me/+8I_jmxQJMHI4MjFl'">
-        <span class="telegram-icon">✈️</span>
-        JOIN TELEGRAM CHANNEL
-    </button>
+    <!-- BUTTON -->
+    <a href="https://t.me/+KB7VDXpgU9wwYTM1" class="btn">
+        Join Telegram <span>+</span>
+    </a>
 
-    <div class="stars">★★★★★</div>
-    <div class="rating">Rated highly by community learners</div>
+    <!-- POINTS -->
+    <div class="list">
+        <p>Advanced trading education & strategies</p>
+        <p>Daily market learning & insights</p>
+        <p>Trusted trader community on Telegram</p>
+    </div>
 
+    <!-- DISCLAIMER -->
     <div class="disclaimer">
-        Educational purpose only. No tips, no guarantees.<br>
-        Market participation involves risk.
+        This is for educational purposes only.<br>
+        Securities market investments are subject to market risks.
     </div>
 
 </div>
 
+<!-- LIVE COUNTER SCRIPT -->
+<script>
+let count = 33856;
+setInterval(()=>{
+    count += Math.floor(Math.random()*3);
+    document.getElementById("count").innerText = count;
+},50000);
+</script>
+
 </body>
 </html>
+
